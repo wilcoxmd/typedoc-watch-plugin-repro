@@ -1,0 +1,28 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "target": "es6",
+    "importHelpers": true,
+    "declaration": true,
+    "sourceMap": true,
+    "rootDir": "./src",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // required Vite configurations
+    // see https://vitejs.dev/guide/features.html#typescript-compiler-options
+    "isolatedModules": true,
+    "emitDeclarationOnly": true, // we use Vite to build the library and generate the complied JS files
+    "declarationDir": "dist"
+  }
+}

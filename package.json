@@ -1,0 +1,18 @@
+{
+  "name": "typedoc-watch-plugin-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typedoc": "typedoc --out docs src/index.ts",
+    "typedoc-watch": "typedoc --watch --out docs src/index.ts"
+  },
+  "author": "Matt Wilcox",
+  "license": "ISC",
+  "devDependencies": {
+    "typedoc": "^0.22.10",
+    "typedoc-plugin-markdown": "^3.11.8",
+    "typescript": "^4.5.4"
+  }
+}
